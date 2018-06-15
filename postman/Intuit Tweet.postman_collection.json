@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "56f3987a-57e1-4690-b26b-eaf7d8e48fd8",
+		"name": "Intuit Tweet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Home Feed (No Auth)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\": \"new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1new description 1\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate Ben",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "ben",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "benspassword",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate Bob",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "bob",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "bobspassword",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate Jerry",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "jerry",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "jerryspassword",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Feed for user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/feed",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"message\": \"my new tweet\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/tweets",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tweets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Follow User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\": \"my todo description 1\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/follows/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"follows",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Following",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\": \"my todo description 1\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/follows",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"follows"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tweet by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\": \"my todo description 1\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/tweets/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tweets",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "25be83c4-d7f7-4a64-9a71-5b05694ca9e1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "32c32b61-d282-40c9-8b37-cac3d794ab50",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
