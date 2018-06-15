@@ -36,6 +36,6 @@ Run in postman using: postman/Intuit Tweet.postman_connection.json
 Else run in browser:  
 Home page: http://localhost:8080/  
 Get Feed: http://localhost:8080/feed [login with ben/benspassword]  
-Get Followers: http://localhost:8080/follows  
+Get Following: http://localhost:8080/follows  
   
 H2 Console: http://localhost:8080/h2-console [login with sa/no password needed]  
